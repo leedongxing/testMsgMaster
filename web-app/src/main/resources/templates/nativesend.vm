@@ -1,0 +1,13 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+</head>
+<body>
+<div><label>xxx</label>dddd</div>
+<form method="post" action="p2p/sendTopic">
+    <input name="msg">
+    <button type="submit">发送</button>
+</form>
+</body>
+</html>
