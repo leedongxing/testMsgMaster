@@ -61,4 +61,28 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <profiles>
+    <profile>
+      <id>local</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <profileActive>local</profileActive>
+        <!--<LOG_PATH>/export/Log</LOG_PATH>-->
+        <!--<LOG_LEVEL>INFO</LOG_LEVEL>-->
+      </properties>
+    </profile>
+    <profile>
+      <id>online</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <profileActive>online</profileActive>
+        <!--<LOG_PATH>/export/Log</LOG_PATH>-->
+        <!--<LOG_LEVEL>INFO</LOG_LEVEL>-->
+      </properties>
+    </profile>
+  </profiles>
 </project>
