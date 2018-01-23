@@ -58,6 +58,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-activemq</artifactId>
         <version>1.4.1.RELEASE</version>
+      </dependency><!-- redis-->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-redis</artifactId>
+        <version>1.4.1.RELEASE</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
