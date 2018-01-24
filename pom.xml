@@ -11,6 +11,7 @@
   <modules>
     <module>web-app</module>
     <module>web-service</module>
+    <module>web-domain</module>
   </modules>
 
   <parent>
@@ -58,11 +59,28 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-activemq</artifactId>
         <version>1.4.1.RELEASE</version>
-      </dependency><!-- redis-->
+      </dependency>
+      <!-- Spring Session -->
+      <dependency>
+        <groupId>org.springframework.session</groupId>
+        <artifactId>spring-session</artifactId>
+        <version>1.2.2.RELEASE</version>
+      </dependency>
+      <!-- redis-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-redis</artifactId>
         <version>1.4.1.RELEASE</version>
+      </dependency>
+      <dependency>
+        <groupId>redis.clients</groupId>
+        <artifactId>jedis</artifactId>
+        <version>2.9.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson</artifactId>
+        <version>1.0.2</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
