@@ -29,6 +29,11 @@ public class UserInfoServcie {
     DistributedLockHandler distributedLockHandler;
 
     public String getUserInfo() {
+        String userInfo = "longke";
+        return userInfo;
+    }
+
+    public String getUserInfoWithLock() {
         Lock lock=new Lock("lockk","sssssssss");
         String userInfo = "";
         if(distributedLockHandler.tryLock(lock)){
